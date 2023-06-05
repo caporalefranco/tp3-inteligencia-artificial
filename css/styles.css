@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  width: 100vw;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.main .grids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  min-width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.grid-container .grid {
+  display: grid;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 10vw;
+  min-height: 10vw;
+  margin: 10px 0px;
+}
+
+.grid > div {
+  border-color: 1px solid var(--primary);
+  border-style: groove;
+  padding: 5px;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.controls button {
+  margin: 0.5%;
+}
+
+body {
+  background-color: #ececec;
+}
+
+#patrones-utilizados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
+}

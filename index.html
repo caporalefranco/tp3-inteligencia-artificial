@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hopfield - Caporale Franco</title>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/Matriz.js"></script>
+    <script src="js/RedHopfield.js"></script>
+    <script src="js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section class="container-fluid main">
+      <h1>Hopfield - Caporale Franco</h1>
+      <div class="grids">
+        <div class="grid-container">
+          <div id="inputGrid" class="grid"></div>
+          <h4>Introduzca el patrón</h4>
+        </div>
+        <div class="grid-container">
+          <div id="outputGrid" class="grid"></div>
+          <h4>Resultado de la predicción</h4>
+        </div>
+        <div class="row controls">
+          <button
+            class="btn btn-primary btn-xs"
+            type="button"
+            id="clearGrid"
+            onclick="limpiarMatrices()"
+          >
+            Limpiar
+          </button>
+          <button
+            class="btn btn-primary btn-xs"
+            type="button"
+            id="train"
+            onclick="entrenarRed()"
+          >
+            Entrenar
+          </button>
+          <button
+            class="btn btn-primary btn-xs"
+            type="button"
+            id="predict"
+            onclick="buscarPatron()"
+          >
+            Buscar
+          </button>
+        </div>
+      </div>
+
+      <div id="patrones-utilizados">
+        <h4>Patrones utilizados</h4>
+        <div class="grids"></div>
+      </div>
+    </section>
+  </body>
+</html>
